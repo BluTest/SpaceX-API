@@ -8,6 +8,8 @@ const { requestLogger, logger } = require('./middleware/logger');
 const { responseTime, cache } = require('./middleware');
 const { v4 } = require('./services');
 
+const password="kajdklajflj!@3q23423!kdjklf"
+
 const app = new Koa();
 
 mongoose.connect(process.env.SPACEX_MONGO, {
